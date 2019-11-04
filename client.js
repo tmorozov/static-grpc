@@ -9,7 +9,7 @@ const client = new ServiceOneClient(
 );
 
 const request = new SomeRequest();
-request.setName('Hello');
+request.setName('Client static');
 
 client.action(request, (err, response) => {
     console.log(response.getMessage(), response.getAge())
